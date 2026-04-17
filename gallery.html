@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图案库 | 我嘞个豆</title>
+  <meta name="description" content="拼豆图案库，支持按难度和主题筛选，点击查看详情可放大预览作品图片。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="gallery">
+  <header class="site-header" aria-label="网站顶部导航">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" data-transition aria-label="返回网站首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span class="logo-a"></span><span class="logo-a"></span><span class="logo-b"></span><span></span><span></span>
+          <span class="logo-a"></span><span class="logo-a"></span><span class="logo-b"></span><span class="logo-b"></span><span class="logo-c"></span><span></span>
+          <span class="logo-a"></span><span class="logo-b"></span><span class="logo-b"></span><span class="logo-c"></span><span class="logo-c"></span><span></span>
+          <span class="logo-a"></span><span class="logo-b"></span><span class="logo-c"></span><span class="logo-c"></span><span class="logo-d"></span><span></span>
+          <span></span><span class="logo-c"></span><span class="logo-c"></span><span class="logo-d"></span><span class="logo-d"></span><span></span>
+          <span></span><span></span><span class="logo-d"></span><span class="logo-d"></span><span></span><span></span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">我嘞个豆</span>
+          <span class="brand-subtitle">Pixel Beads Studio</span>
+        </span>
+      </a>
+      <div class="nav-actions">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="切换导航菜单" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html" data-nav="home" data-transition>首页</a>
+        <a class="nav-link" href="guide.html" data-nav="guide" data-transition>入门指南</a>
+        <a class="nav-link" href="gallery.html" data-nav="gallery" data-transition>图案库</a>
+        <a class="nav-link" href="tutorial.html" data-nav="tutorial" data-transition>制作教程</a>
+        <a class="nav-link" href="about.html" data-nav="about" data-transition>我与拼豆</a>
+      </nav>
+      <div class="scroll-progress" aria-hidden="true">
+        <span class="scroll-progress__bar" data-scroll-bar></span>
+      </div>
+    </div>
+  </header>
+
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换网站主题"></button>
+
+  <main>
+    <section aria-label="图案库主体内容">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Pattern Library</span>
+          <h1>图案库</h1>
+          <p>这里放入常见的拼豆灵感图。通过难度和主题双重筛选，让页面既有交互性，也更接近真实作品集浏览体验。</p>
+        </div>
+
+        <div class="gallery-toolbar reveal reveal-delay-1">
+          <div class="filter-group" data-filter-group="difficulty" aria-label="按难度筛选">
+            <button class="filter-button is-active" type="button" data-value="all">全部难度</button>
+            <button class="filter-button" type="button" data-value="入门">入门</button>
+            <button class="filter-button" type="button" data-value="进阶">进阶</button>
+            <button class="filter-button" type="button" data-value="挑战">挑战</button>
+          </div>
+          <div class="filter-group" data-filter-group="theme" aria-label="按主题筛选">
+            <button class="filter-button is-active" type="button" data-value="all">全部主题</button>
+            <button class="filter-button" type="button" data-value="动物">动物</button>
+            <button class="filter-button" type="button" data-value="像素游戏">像素游戏</button>
+            <button class="filter-button" type="button" data-value="节日">节日</button>
+            <button class="filter-button" type="button" data-value="文字">文字</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" data-gallery-grid>
+          <article class="gallery-card hover-lift reveal" data-card-id="cat" data-difficulty="入门" data-theme="动物">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏奶油小猫" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-01-cat.jpg" alt="奶油小猫拼豆成品图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看奶油小猫大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>奶油小猫</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">入门</span>
+                <span class="data-chip">颗粒数 126</span>
+                <span class="data-chip">动物</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-1" data-card-id="hello" data-difficulty="入门" data-theme="文字">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏 HELLO Kitty标牌" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-02-hello.jpg" alt="HELLO Kitty标牌拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看 HELLO Kitty标牌大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>HELLO Kitty标牌</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">入门</span>
+                <span class="data-chip">颗粒数 94</span>
+                <span class="data-chip">文字</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-2" data-card-id="rabbit" data-difficulty="进阶" data-theme="动物">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏薄荷兔兔" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-03-rabbit.jpg" alt="薄荷兔兔拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看薄荷兔兔大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>薄荷兔兔</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">进阶</span>
+                <span class="data-chip">颗粒数 212</span>
+                <span class="data-chip">动物</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-3" data-card-id="hero" data-difficulty="挑战" data-theme="像素游戏">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏游戏角色" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-04-hero.jpg" alt="像素游戏角色拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看游戏角色大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>游戏角色</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">挑战</span>
+                <span class="data-chip">颗粒数 365</span>
+                <span class="data-chip">像素游戏</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal" data-card-id="tree" data-difficulty="进阶" data-theme="节日">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏节日小树" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-05-tree.jpg" alt="节日小树拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看节日小树大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>节日小树</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">进阶</span>
+                <span class="data-chip">颗粒数 188</span>
+                <span class="data-chip">节日</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-1" data-card-id="coin" data-difficulty="入门" data-theme="像素游戏">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏像素金币" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-06-coin.jpg" alt="像素金币拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看像素金币大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>像素金币</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">入门</span>
+                <span class="data-chip">颗粒数 80</span>
+                <span class="data-chip">像素游戏</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-2" data-card-id="dou" data-difficulty="挑战" data-theme="文字">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏豆字挂饰" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-07-dou.jpg" alt="豆字挂饰拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看豆字挂饰大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>豆字挂饰</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">挑战</span>
+                <span class="data-chip">颗粒数 248</span>
+                <span class="data-chip">文字</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card hover-lift reveal reveal-delay-3" data-card-id="pumpkin" data-difficulty="进阶" data-theme="节日">
+            <button class="favorite-button" type="button" data-favorite-button aria-label="收藏万圣节南瓜" aria-pressed="false"></button>
+            <div class="gallery-thumb img-skeleton">
+              <img loading="lazy" src="images/gallery/gallery-08-pumpkin.jpg" alt="万圣节南瓜拼豆图">
+              <button class="pixel-button detail-cta" type="button" data-preview-open aria-label="查看万圣节南瓜大图">查看详情</button>
+            </div>
+            <div class="gallery-body">
+              <h3>万圣节南瓜</h3>
+              <div class="gallery-meta">
+                <span class="data-chip">进阶</span>
+                <span class="data-chip">颗粒数 206</span>
+                <span class="data-chip">节日</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="filter-empty" data-filter-empty>当前筛选条件下没有匹配图案，可以切换难度或主题继续浏览。</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal preview-modal" data-preview-modal aria-label="图案大图预览" role="dialog" aria-modal="true">
+    <div class="modal-card preview-modal__card">
+      <button class="export-close" type="button" data-preview-close aria-label="关闭大图预览">×</button>
+      <figure class="preview-figure">
+        <div class="preview-figure__media img-skeleton" data-preview-media>
+          <img src="" alt="" data-preview-image>
+        </div>
+        <figcaption class="preview-figure__caption">
+          <h3 data-preview-title>图案预览</h3>
+          <p data-preview-meta>点击遮罩或按 Esc 可关闭预览。</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-meta">
+      <p>© 2026 我嘞个豆. 图案库页面。</p>
+      <div class="inline-actions">
+        <a class="nav-link" href="tutorial.html" data-transition>下一页：制作教程</a>
+        <button class="ghost-button" type="button" data-back-top>返回顶部</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>
